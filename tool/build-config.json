@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-hvnro-130826.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-hvnro-130826",
+    "xcodeZip":  "Xcode-Input/xcode-nso-lengendnew-130626.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nso-lengendnew-130626",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "HocVienNro.app",
-    "outputIpa":  "HocVienNro.ipa",
-    "artifactName":  "HocVienNro-ipa",
-    "bundleId":  "com.hocviennronew.ttmtech",
-    "detectedAt":  "2026-08-13T18:52:46.3015549+07:00"
+    "appName":  "NsoLegend.app",
+    "outputIpa":  "NsoLegend.ipa",
+    "artifactName":  "NsoLegend-ipa",
+    "bundleId":  "com.nsolegendnewww.ttmtech",
+    "detectedAt":  "2026-08-13T21:37:11.0161489+07:00"
 }
