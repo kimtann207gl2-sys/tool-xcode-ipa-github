@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-hocviennro-130626.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-hocviennro-130626",
+    "xcodeZip":  "Xcode-Input/xcode-cbr-vn-140826.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-cbr-vn-140826",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "HocVienNro.app",
-    "outputIpa":  "HocVienNro.ipa",
-    "artifactName":  "HocVienNro-ipa",
-    "bundleId":  "com.hocviennronew.ttmtech",
-    "detectedAt":  "2026-08-14T08:44:01.7724828+07:00"
+    "appName":  "ChienBinhRongVn.app",
+    "outputIpa":  "ChienBinhRongVn.ipa",
+    "artifactName":  "ChienBinhRongVn-ipa",
+    "bundleId":  "com.chienbinhrongvnnew.ttmtech",
+    "detectedAt":  "2026-08-15T04:22:57.0737448+07:00"
 }
