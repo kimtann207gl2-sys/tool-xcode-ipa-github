@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-cbr-vn-140826.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-cbr-vn-140826",
+    "xcodeZip":  "Xcode-Input/xcode-nroteam2025-210826.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroteam2025-210826",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "ChienBinhRongVn.app",
-    "outputIpa":  "ChienBinhRongVn.ipa",
-    "artifactName":  "ChienBinhRongVn-ipa",
-    "bundleId":  "com.chienbinhrongvnnew.ttmtech",
-    "detectedAt":  "2026-08-15T04:22:57.0737448+07:00"
+    "appName":  "NroTeam2015.app",
+    "outputIpa":  "NroTeam2015.ipa",
+    "artifactName":  "NroTeam2015-ipa",
+    "bundleId":  "com.nroteam2015.ttmtech",
+    "detectedAt":  "2026-08-21T16:01:17.2996868+07:00"
 }
