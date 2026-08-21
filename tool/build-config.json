@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nroteam2025-210826.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroteam2025-210826",
+    "xcodeZip":  "Xcode-Input/xcode-nroshadow-220826.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroshadow-220826",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroTeam2015.app",
-    "outputIpa":  "NroTeam2015.ipa",
-    "artifactName":  "NroTeam2015-ipa",
-    "bundleId":  "com.nroteam2015.ttmtech",
-    "detectedAt":  "2026-08-21T16:01:17.2996868+07:00"
+    "appName":  "NroShadow.app",
+    "outputIpa":  "NroShadow.ipa",
+    "artifactName":  "NroShadow-ipa",
+    "bundleId":  "com.nroshadow.ttmtech",
+    "detectedAt":  "2026-08-22T00:26:25.8774753+07:00"
 }
