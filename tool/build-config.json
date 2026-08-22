@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nroshadow-220826.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroshadow-220826",
+    "xcodeZip":  "Xcode-Input/xcode-cbrvn-220826.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-cbrvn-220826",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroShadow.app",
-    "outputIpa":  "NroShadow.ipa",
-    "artifactName":  "NroShadow-ipa",
-    "bundleId":  "com.nroshadow.ttmtech",
-    "detectedAt":  "2026-08-22T13:36:31.4796499+07:00"
+    "appName":  "ChienBinhRongVn.app",
+    "outputIpa":  "ChienBinhRongVn.ipa",
+    "artifactName":  "ChienBinhRongVn-ipa",
+    "bundleId":  "com.cbrvnnew.ttmtech",
+    "detectedAt":  "2026-08-22T15:27:53.0652911+07:00"
 }
