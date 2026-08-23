@@ -1,11 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-cbrvn-220826.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-cbrvn-220826",
+    "xcodeZip":  "Xcode-Input/xcode.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "ChienBinhRongVn.app",
-    "outputIpa":  "ChienBinhRongVn.ipa",
-    "artifactName":  "ChienBinhRongVn-ipa",
-    "bundleId":  "com.cbrvnnew.ttmtech",
-    "detectedAt":  "2026-08-22T15:27:53.0652911+07:00"
+    "appName":  "NroEMTI.app",
+    "outputIpa":  "NroEMTI.ipa",
+    "artifactName":  "NroEMTI-ipa",
+    "bundleId":  "com.NRO-EMTI.Nro-EMTI",
+    "detectedAt":  "2026-08-23T14:59:13.8450468+07:00"
 }
