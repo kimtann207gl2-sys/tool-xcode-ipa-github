@@ -45,6 +45,8 @@ jobs:
             echo "Xcode source already present at $XCODE_SRC"
           fi
           test -d "$XCODE_SRC/$XCODE_PROJECT" || { echo "Xcode project not found at $XCODE_SRC/$XCODE_PROJECT"; exit 1; }
+          # Zip from Windows often drops execute bits on shell scripts.
+          find "$XCODE_SRC" -type f -name "*.sh" -exec chmod +x {} +
 
       - name: Select Xcode
         run: |
