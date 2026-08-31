@@ -36,6 +36,14 @@ jobs:
       - name: Load build config
         run: bash scripts/load-build-config.sh tool/build-config.json
 
+      - name: Download Xcode zip (Release URL)
+        if: env.XCODE_ZIP_URL != ''
+        run: |
+          mkdir -p "$(dirname "$XCODE_ZIP")"
+          echo "Downloading zip from release URL..."
+          curl -fsSL -o "$XCODE_ZIP" "$XCODE_ZIP_URL"
+          test -s "$XCODE_ZIP" || { echo "Downloaded zip is empty"; exit 1; }
+
       - name: Extract Xcode project
         run: |
           if [ ! -d "$XCODE_SRC/$XCODE_PROJECT" ]; then
