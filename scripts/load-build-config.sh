@@ -43,6 +43,7 @@ write_env APP_NAME "$(read_config appName)"
 write_env OUTPUT_IPA "Xcode-Output/$(read_config outputIpa)"
 write_env ARTIFACT_NAME "$(read_config artifactName)"
 write_env XCODE_ZIP_URL "$(read_config_optional xcodeZipUrl)"
+write_env XCODE_ZIP_RELEASE "$(read_config_optional xcodeZipRelease)"
 
 echo "Loaded build config from $CONFIG"
 echo "  XCODE_SRC=$XCODE_SRC"

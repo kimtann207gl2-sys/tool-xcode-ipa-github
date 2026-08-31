@@ -36,12 +36,17 @@ jobs:
       - name: Load build config
         run: bash scripts/load-build-config.sh tool/build-config.json
 
-      - name: Download Xcode zip (Release URL)
-        if: env.XCODE_ZIP_URL != ''
+      - name: Download Xcode zip (Release)
+        if: env.XCODE_ZIP_RELEASE != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p "$(dirname "$XCODE_ZIP")"
-          echo "Downloading zip from release URL..."
-          curl -fsSL -o "$XCODE_ZIP" "$XCODE_ZIP_URL"
+          echo "Downloading zip from release $XCODE_ZIP_RELEASE ..."
+          gh release download "$XCODE_ZIP_RELEASE" \
+            --repo "${{ github.repository }}" \
+            --pattern "$(basename "$XCODE_ZIP")" \
+            --dir "$(dirname "$XCODE_ZIP")"
           test -s "$XCODE_ZIP" || { echo "Downloaded zip is empty"; exit 1; }
 
       - name: Extract Xcode project

@@ -1,6 +1,7 @@
 {
     "xcodeZip":  "Xcode-Input/xcode-nro-champ-010926.zip",
     "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nro-champ-010926/xcode-nro-champ-010926.zip",
+    "xcodeZipRelease":  "build-nro-champ-010926",
     "xcodeSrc":  "Xcode-Input/extracted/xcode-nro-champ-010926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
