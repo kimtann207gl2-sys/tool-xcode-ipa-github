@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrocham-020926.zip",
-    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nrocham-020926/xcode-nrocham-020926.zip",
-    "xcodeZipRelease":  "build-nrocham-020926",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrocham-020926",
+    "xcodeZip":  "Xcode-Input/xcode-nrozio-020926.zip",
+    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nrozio-020926/xcode-nrozio-020926.zip",
+    "xcodeZipRelease":  "build-nrozio-020926",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrozio-020926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroChamp.app",
-    "outputIpa":  "NroChamp.ipa",
-    "artifactName":  "NroChamp-ipa",
-    "bundleId":  "com.nrochamp.ttmtech",
-    "detectedAt":  "2026-09-02T11:17:38.7399633+07:00"
+    "appName":  "NgocRongZio.app",
+    "outputIpa":  "NgocRongZio.ipa",
+    "artifactName":  "NgocRongZio-ipa",
+    "bundleId":  "com.nrozio.ttmtech",
+    "detectedAt":  "2026-09-02T11:47:00.0000000+07:00"
 }
