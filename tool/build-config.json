@@ -1,13 +1,11 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-hocviennro-020926.zip",
-    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-hocviennro-020926/xcode-hocviennro-020926.zip",
-    "xcodeZipRelease":  "build-hocviennro-020926",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-hocviennro-020926",
+    "xcodeZip":  "Xcode-Input/xcode-nrozio-090926.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrozio-090926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "HocVienNro.app",
-    "outputIpa":  "HocVienNro.ipa",
-    "artifactName":  "HocVienNro-ipa",
-    "bundleId":  "com.hocviennro.ttmtech",
-    "detectedAt":  "2026-09-02T13:38:43.9534708+07:00"
+    "appName":  "NgocRongZio.app",
+    "outputIpa":  "NgocRongZio.ipa",
+    "artifactName":  "NgocRongZio-ipa",
+    "bundleId":  "com.nrozio.ttmtech",
+    "detectedAt":  "2026-09-10T06:36:48.2474964+07:00"
 }
