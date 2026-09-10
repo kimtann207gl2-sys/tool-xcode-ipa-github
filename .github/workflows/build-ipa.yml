@@ -43,10 +43,12 @@ jobs:
         run: |
           mkdir -p "$(dirname "$XCODE_ZIP")"
           echo "Downloading zip from release $XCODE_ZIP_RELEASE ..."
+          rm -f "$XCODE_ZIP"
           gh release download "$XCODE_ZIP_RELEASE" \
             --repo "${{ github.repository }}" \
             --pattern "$(basename "$XCODE_ZIP")" \
-            --dir "$(dirname "$XCODE_ZIP")"
+            --dir "$(dirname "$XCODE_ZIP")" \
+            --clobber
           test -s "$XCODE_ZIP" || { echo "Downloaded zip is empty"; exit 1; }
 
       - name: Extract Xcode project
