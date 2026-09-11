@@ -28,10 +28,10 @@ jobs:
     timeout-minutes: 90
 
     steps:
-      - name: Checkout (with Git LFS)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          lfs: true
+          lfs: false
 
       - name: Load build config
         run: bash scripts/load-build-config.sh tool/build-config.json
