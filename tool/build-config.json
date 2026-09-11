@@ -1,7 +1,7 @@
 {
     "xcodeZip":  "Xcode-Input/xcode-nrozio-110926.zip",
-    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nrozio-110926/xcode-nrozio-110926.zip",
-    "xcodeZipRelease":  "build-nrozio-110926",
+    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nrozio-110926-2/xcode-nrozio-110926.zip",
+    "xcodeZipRelease":  "build-nrozio-110926-2",
     "xcodeSrc":  "Xcode-Input/extracted/xcode-nrozio-110926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
@@ -9,5 +9,5 @@
     "outputIpa":  "NgocRongZio.ipa",
     "artifactName":  "NgocRongZio-ipa",
     "bundleId":  "com.nrozio.ttmtech",
-    "detectedAt":  "2026-09-11T07:52:46.7810542+07:00"
+    "detectedAt":  "2026-09-11T09:02:44.0635907+07:00"
 }
