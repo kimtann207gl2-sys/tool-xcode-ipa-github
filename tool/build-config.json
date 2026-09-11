@@ -1,7 +1,7 @@
 {
     "xcodeZip":  "Xcode-Input/xcode-nrojiren-110926.zip",
-    "xcodeZipUrl":  "https://github.com/tuancrazy69-star/tool-xcode-ipa-github/releases/download/build-nrojiren-110926-2/xcode-nrojiren-110926.zip",
-    "xcodeZipRelease":  "build-nrojiren-110926-2",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-nrojiren-110926-3/xcode-nrojiren-110926.zip",
+    "xcodeZipRelease":  "build-nrojiren-110926-3",
     "xcodeSrc":  "Xcode-Input/extracted/xcode-nrojiren-110926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
@@ -9,5 +9,5 @@
     "outputIpa":  "NroJiren.ipa",
     "artifactName":  "NroJiren-ipa",
     "bundleId":  "com.nrojiren.ttmtech",
-    "detectedAt":  "2026-09-11T10:51:19.7044145+07:00"
+    "detectedAt":  "2026-09-11T11:16:00.0000000+07:00"
 }
