@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrojiren-110926.zip",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-nrojiren-110926-6/xcode-nrojiren-110926.zip",
-    "xcodeZipRelease":  "build-nrojiren-110926-6",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrojiren-110926",
+    "xcodeZip":  "Xcode-Input/xcode-nrocham-100926.zip",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-nrocham-100926-2/xcode-nrocham-100926.zip",
+    "xcodeZipRelease":  "build-nrocham-100926-2",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrocham-100926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroJiren.app",
-    "outputIpa":  "NroJiren.ipa",
-    "artifactName":  "NroJiren-ipa",
-    "bundleId":  "com.nrojiren.ttmtech",
-    "detectedAt":  "2026-09-13T09:56:00.0000000+07:00"
+    "appName":  "NroChamp.app",
+    "outputIpa":  "NroChamp.ipa",
+    "artifactName":  "NroChamp-ipa",
+    "bundleId":  "com.nrochampnew.ttmtech",
+    "detectedAt":  "2026-09-13T22:52:17.0735151+07:00"
 }
