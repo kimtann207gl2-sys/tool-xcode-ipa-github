@@ -22,6 +22,27 @@ function Write-Step($Msg) {
     Write-Host "==> $Msg" -ForegroundColor Cyan
 }
 
+function Invoke-Native {
+    param(
+        [Parameter(Mandatory = $true)][string]$File,
+        [Parameter(Mandatory = $true)][string[]]$ArgList,
+        [string]$FailMessage = $null
+    )
+    # Avoid PowerShell treating native stderr as terminating errors.
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $File @ArgList
+        $code = $LASTEXITCODE
+    } finally {
+        $ErrorActionPreference = $prev
+    }
+    if ($code -ne 0) {
+        if (-not $FailMessage) { $FailMessage = "$File failed with exit code $code" }
+        throw $FailMessage
+    }
+}
+
 function Get-SafeReleaseTag([string]$ZipName) {
     $base = [IO.Path]::GetFileNameWithoutExtension($ZipName).ToLowerInvariant()
     $base = $base -replace '[^a-z0-9\-]+', '-'
@@ -82,8 +103,13 @@ if (-not $SkipPush) {
     $releaseTag = Get-SafeReleaseTag (Split-Path $zipPath -Leaf)
     $releaseTitle = "Build $($buildCfg.appName) $releaseTag"
     Write-Host "Creating release $releaseTag ..."
-    gh release create $releaseTag --target $cfg.branch --title $releaseTitle --notes "Xcode zip for CI IPA build" $zipPath
-    if ($LASTEXITCODE -ne 0) { throw "gh release create failed" }
+    Invoke-Native -File "gh" -ArgList @(
+        "release", "create", $releaseTag,
+        "--target", $cfg.branch,
+        "--title", $releaseTitle,
+        "--notes", "Xcode zip for CI IPA build",
+        $zipPath
+    ) -FailMessage "gh release create failed"
 
     $zipLeaf = Split-Path $zipPath -Leaf
     $zipUrl = "https://github.com/$repo/releases/download/$releaseTag/$zipLeaf"
@@ -106,19 +132,17 @@ if (-not $SkipPush) {
     $commitMsg = "build: $zipName $timestamp"
     $status = git status --porcelain
     if ($status) {
-        git commit -m $commitMsg
-        if ($LASTEXITCODE -ne 0) { throw "git commit failed" }
+        Invoke-Native -File "git" -ArgList @("commit", "-m", $commitMsg) -FailMessage "git commit failed"
     } else {
         Write-Host "No file changes. Triggering workflow manually."
     }
 
     if ($cfg.uploadAppStore) {
-        gh workflow run $cfg.workflowFile --ref $cfg.branch -f upload_appstore=true
+        Invoke-Native -File "gh" -ArgList @("workflow", "run", $cfg.workflowFile, "--ref", $cfg.branch, "-f", "upload_appstore=true")
         Start-Sleep -Seconds 8
         $runId = gh run list --workflow $cfg.workflowFile --branch $cfg.branch --limit 1 --json databaseId --jq ".[0].databaseId"
     } else {
-        git push origin "HEAD:$($cfg.branch)" 2>&1 | Write-Host
-        if ($LASTEXITCODE -ne 0) { throw "git push failed" }
+        Invoke-Native -File "git" -ArgList @("push", "origin", "HEAD:$($cfg.branch)") -FailMessage "git push failed"
         $commit = git rev-parse HEAD
         $short = $commit.Substring(0, 7)
         Write-Host "Waiting for workflow to start (commit $short)..."
