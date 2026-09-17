@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrozio-110926.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrozio-110926",
+    "xcodeZip":  "Xcode-Input/xcode-nrolucky-180926.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrolucky-180926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NgocRongZio.app",
-    "outputIpa":  "NgocRongZio.ipa",
-    "artifactName":  "NgocRongZio-ipa",
-    "bundleId":  "com.nrozio.ttmtech",
-    "detectedAt":  "2026-09-16T20:14:53.3664979+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrozio-110926-20260916-201456/xcode-nrozio-110926.zip",
-    "xcodeZipRelease":  "build-xcode-nrozio-110926-20260916-201456"
+    "appName":  "NroLucky.app",
+    "outputIpa":  "NroLucky.ipa",
+    "artifactName":  "NroLucky-ipa",
+    "bundleId":  "com.nrolucky.ttmtech",
+    "detectedAt":  "2026-09-18T04:25:30.2609984+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrolucky-180926-20260918-042533/xcode-nrolucky-180926.zip",
+    "xcodeZipRelease":  "build-xcode-nrolucky-180926-20260918-042533"
 }
