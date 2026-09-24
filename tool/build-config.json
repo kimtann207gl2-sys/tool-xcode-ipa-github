@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrolucky-180926.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrolucky-180926",
+    "xcodeZip":  "Xcode-Input/xcode-nrosun-240926.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrosun-240926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroLucky.app",
-    "outputIpa":  "NroLucky.ipa",
-    "artifactName":  "NroLucky-ipa",
-    "bundleId":  "com.nrolucky.ttmtech",
-    "detectedAt":  "2026-09-18T14:30:09.1464733+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrolucky-180926-20260918-143012/xcode-nrolucky-180926.zip",
-    "xcodeZipRelease":  "build-xcode-nrolucky-180926-20260918-143012"
+    "appName":  "NroSun.app",
+    "outputIpa":  "NroSun.ipa",
+    "artifactName":  "NroSun-ipa",
+    "bundleId":  "com.nrosun.ttmtech",
+    "detectedAt":  "2026-09-24T21:20:01.8910690+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrosun-240926-20260924-212005/xcode-nrosun-240926.zip",
+    "xcodeZipRelease":  "build-xcode-nrosun-240926-20260924-212005"
 }
