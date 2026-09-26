@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrocham-260926.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrocham-260926",
+    "xcodeZip":  "Xcode-Input/xcode-nroluckynew-270926.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroluckynew-270926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroChamp.app",
-    "outputIpa":  "NroChamp.ipa",
-    "artifactName":  "NroChamp-ipa",
-    "bundleId":  "com.nrochamp.ttmtech",
-    "detectedAt":  "2026-09-27T00:05:19.8791210+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrocham-260926-20260927-000522/xcode-nrocham-260926.zip",
-    "xcodeZipRelease":  "build-xcode-nrocham-260926-20260927-000522"
+    "appName":  "NroLucky-New.app",
+    "outputIpa":  "NroLucky-New.ipa",
+    "artifactName":  "NroLucky-New-ipa",
+    "bundleId":  "com.nroluckynew.ttmtech",
+    "detectedAt":  "2026-09-27T02:14:29.6566146+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nroluckynew-270926-20260927-021432/xcode-nroluckynew-270926.zip",
+    "xcodeZipRelease":  "build-xcode-nroluckynew-270926-20260927-021432"
 }
