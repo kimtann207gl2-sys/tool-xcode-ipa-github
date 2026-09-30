@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nroluckynew-270926.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroluckynew-270926",
+    "xcodeZip":  "Xcode-Input/xcode-nroneov2-300926.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroneov2-300926",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroLucky-New.app",
-    "outputIpa":  "NroLucky-New.ipa",
-    "artifactName":  "NroLucky-New-ipa",
-    "bundleId":  "com.nroluckynew.ttmtech",
-    "detectedAt":  "2026-09-27T02:14:29.6566146+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nroluckynew-270926-20260927-021432/xcode-nroluckynew-270926.zip",
-    "xcodeZipRelease":  "build-xcode-nroluckynew-270926-20260927-021432"
+    "appName":  "NroNeo-V2.app",
+    "outputIpa":  "NroNeo-V2.ipa",
+    "artifactName":  "NroNeo-V2-ipa",
+    "bundleId":  "com.nroneov2.ttmtech",
+    "detectedAt":  "2026-09-30T07:39:05.1084778+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nroneov2-300926-20260930-073908/xcode-nroneov2-300926.zip",
+    "xcodeZipRelease":  "build-xcode-nroneov2-300926-20260930-073908"
 }
