@@ -21,10 +21,14 @@ on:
         description: Upload to App Store Connect (requires signed build)
         type: boolean
         default: false
+      runner:
+        description: macOS runner label (e.g. macos-latest, macos-15-intel)
+        type: string
+        default: macos-latest
 
 jobs:
   build-ipa:
-    runs-on: macos-latest
+    runs-on: ${{ inputs.runner || 'macos-latest' }}
     timeout-minutes: 90
 
     steps:
