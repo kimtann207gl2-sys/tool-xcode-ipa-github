@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrolegend-081026.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrolegend-081026",
+    "xcodeZip":  "Xcode-Input/xcode-ngocrongco-091026.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-ngocrongco-091026",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroLegend.app",
-    "outputIpa":  "NroLegend.ipa",
-    "artifactName":  "NroLegend-ipa",
-    "bundleId":  "com.nrolegend.ttmtech",
-    "detectedAt":  "2026-10-08T23:24:45.9094943+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrolegend-081026-20261008-232448/xcode-nrolegend-081026.zip",
-    "xcodeZipRelease":  "build-xcode-nrolegend-081026-20261008-232448"
+    "appName":  "NgocRongCo.app",
+    "outputIpa":  "NgocRongCo.ipa",
+    "artifactName":  "NgocRongCo-ipa",
+    "bundleId":  "com.ngocrongco.ttmtech",
+    "detectedAt":  "2026-10-09T22:07:03.4882950+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-ngocrongco-091026-20261009-220706/xcode-ngocrongco-091026.zip",
+    "xcodeZipRelease":  "build-xcode-ngocrongco-091026-20261009-220706"
 }
