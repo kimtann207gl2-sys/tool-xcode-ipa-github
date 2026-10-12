@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-ngocrongco-091026.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-ngocrongco-091026",
+    "xcodeZip":  "Xcode-Input/xcode-nrofan-121026.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrofan-121026",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NgocRongCo.app",
-    "outputIpa":  "NgocRongCo.ipa",
-    "artifactName":  "NgocRongCo-ipa",
-    "bundleId":  "com.ngocrongco.ttmtech",
-    "detectedAt":  "2026-10-09T22:07:03.4882950+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-ngocrongco-091026-20261009-220706/xcode-ngocrongco-091026.zip",
-    "xcodeZipRelease":  "build-xcode-ngocrongco-091026-20261009-220706"
+    "appName":  "NgocRongFan.app",
+    "outputIpa":  "NgocRongFan.ipa",
+    "artifactName":  "NgocRongFan-ipa",
+    "bundleId":  "com.ngocrongfan.ttmtech",
+    "detectedAt":  "2026-10-12T15:19:59.8262683+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrofan-121026-20261012-152003/xcode-nrofan-121026.zip",
+    "xcodeZipRelease":  "build-xcode-nrofan-121026-20261012-152003"
 }
