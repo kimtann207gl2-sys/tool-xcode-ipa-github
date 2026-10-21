@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nroking-191026.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nroking-191026",
+    "xcodeZip":  "Xcode-Input/xcode-nrotaiwan-211026-logo.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrotaiwan-211026",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroKing.app",
-    "outputIpa":  "NroKing.ipa",
-    "artifactName":  "NroKing-ipa",
-    "bundleId":  "com.nrokingnew.ttmtech",
-    "detectedAt":  "2026-10-19T16:16:32.3961734+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nroking-191026-20261019-161635/xcode-nroking-191026.zip",
-    "xcodeZipRelease":  "build-xcode-nroking-191026-20261019-161635"
+    "appName":  "NgcRngTaiwan.app",
+    "outputIpa":  "NgcRngTaiwan.ipa",
+    "artifactName":  "NgcRngTaiwan-ipa",
+    "bundleId":  "com.ngocrong.taiwan",
+    "detectedAt":  "2026-10-22T00:22:01.8371919+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrotaiwan-211026-logo-20261022-002204/xcode-nrotaiwan-211026-logo.zip",
+    "xcodeZipRelease":  "build-xcode-nrotaiwan-211026-logo-20261022-002204"
 }
