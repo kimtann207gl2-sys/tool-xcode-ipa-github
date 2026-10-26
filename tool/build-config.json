@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/xcode-nrohonnguyen-251026.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrohonnguyen-251026",
+    "xcodeZip":  "Xcode-Input/ios.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/ios",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NgcRngHnNguyn.app",
-    "outputIpa":  "NgcRngHnNguyn.ipa",
-    "artifactName":  "NgcRngHnNguyn-ipa",
-    "bundleId":  "com.ngocrong.honnguyen",
-    "detectedAt":  "2026-10-25T12:54:42.4568207+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrohonnguyen-251026-20261025-125445/xcode-nrohonnguyen-251026.zip",
-    "xcodeZipRelease":  "build-xcode-nrohonnguyen-251026-20261025-125445"
+    "appName":  "NroGreen.app",
+    "outputIpa":  "NroGreen.ipa",
+    "artifactName":  "NroGreen-ipa",
+    "bundleId":  "com.MrDUY.NroGreen",
+    "detectedAt":  "2026-10-26T15:28:12.6898908+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-ios-20261026-152815/ios.zip",
+    "xcodeZipRelease":  "build-ios-20261026-152815"
 }

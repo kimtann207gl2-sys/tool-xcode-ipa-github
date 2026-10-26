@@ -1,7 +1,8 @@
 # Scan Xcode-Input/*.zip and write tool/build-config.json for CI.
 param(
     [string]$InputDir = "Xcode-Input",
-    [string]$OutputConfig = "tool/build-config.json"
+    [string]$OutputConfig = "tool/build-config.json",
+    [string]$XcodeZipPath = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -24,15 +25,29 @@ function Get-ZipTextEntry {
     return $null
 }
 
-$zipFiles = Get-ChildItem -Path $InputDir -Filter "*.zip" -File | Sort-Object LastWriteTime -Descending
-if ($zipFiles.Count -eq 0) {
-    throw "No .zip found in $InputDir. Place your Xcode export zip there first."
+if ($XcodeZipPath) {
+    if (Test-Path -LiteralPath $XcodeZipPath) {
+        $zipItem = Get-Item -LiteralPath $XcodeZipPath
+    } else {
+        $candidate = Join-Path $InputDir $XcodeZipPath
+        if (-not (Test-Path -LiteralPath $candidate)) {
+            throw "Zip not found: $XcodeZipPath"
+        }
+        $zipItem = Get-Item -LiteralPath $candidate
+    }
+} else {
+    $zipFiles = @(Get-ChildItem -Path $InputDir -Filter "*.zip" -File | Sort-Object LastWriteTime -Descending)
+    if ($zipFiles.Count -eq 0) {
+        throw "No .zip found in $InputDir. Place your Xcode export zip there first."
+    }
+    $zipItem = $zipFiles[0]
 }
+if (-not $zipItem -or -not $zipItem.FullName) {
+    throw "Invalid zip file reference."
+}
+Write-Host "[detect] Using zip: $($zipItem.Name)"
 
-$zipFile = $zipFiles[0]
-Write-Host "[detect] Using zip: $($zipFile.Name)"
-
-$zip = [System.IO.Compression.ZipFile]::OpenRead($zipFile.FullName)
+$zip = [System.IO.Compression.ZipFile]::OpenRead($zipItem.FullName)
 try {
     $pbxEntry = Get-ZipTextEntry -Zip $zip -Pattern "\.xcodeproj/project\.pbxproj$"
     if (-not $pbxEntry) { throw "No .xcodeproj/project.pbxproj found inside zip." }
@@ -64,8 +79,17 @@ try {
     $baseName = [IO.Path]::GetFileNameWithoutExtension($appName)
     $artifactName = "$baseName-ipa"
 
+    $rootPath = (Get-Location).Path.TrimEnd('\')
+    $fullZip = $zipItem.FullName
+    if ($fullZip.StartsWith($rootPath, [StringComparison]::OrdinalIgnoreCase)) {
+        $zipRel = $fullZip.Substring($rootPath.Length).TrimStart('\', '/')
+    } else {
+        $zipRel = "$InputDir/$($zipItem.Name)"
+    }
+    $zipRel = ($zipRel -replace "\\", "/")
+
     $config = [ordered]@{
-        xcodeZip      = "$InputDir/$($zipFile.Name)" -replace "\\", "/"
+        xcodeZip      = $zipRel
         xcodeSrc      = "$InputDir/extracted/$innerRoot" -replace "\\", "/"
         xcodeProject  = $xcodeProject
         scheme        = $scheme

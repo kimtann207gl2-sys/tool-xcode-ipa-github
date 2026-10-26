@@ -3,7 +3,9 @@
 param(
     [switch]$UploadAppStore,
     [switch]$SkipPush,
-    [switch]$Setup
+    [switch]$Setup,
+    [string]$ZipFile = "",
+    [string]$OutputDir = ""
 )
 
 $ErrorActionPreference = "Stop"
@@ -71,11 +73,27 @@ $cfg = Get-Content $cfgPath -Raw | ConvertFrom-Json
 if ($UploadAppStore) { $cfg.uploadAppStore = $true }
 
 Write-Step "Detect Xcode project from zip"
-& (Join-Path $Root "tool/detect-project.ps1")
+if ($ZipFile) {
+    & (Join-Path $Root "tool/detect-project.ps1") -XcodeZipPath $ZipFile
+} else {
+    & (Join-Path $Root "tool/detect-project.ps1")
+}
 $buildCfg = Get-Content "tool/build-config.json" -Raw | ConvertFrom-Json
 $zipRel = $buildCfg.xcodeZip.Replace("/", [IO.Path]::DirectorySeparatorChar)
-$zipPath = Join-Path $Root $zipRel
+if ([IO.Path]::IsPathRooted($zipRel)) {
+    $zipPath = $zipRel
+} else {
+    $zipPath = Join-Path $Root $zipRel
+}
 if (-not (Test-Path $zipPath)) { throw "Zip not found: $zipPath" }
+
+if ($OutputDir) {
+    $OutputDir = $OutputDir.Trim()
+    if (-not (Test-Path $OutputDir)) {
+        New-Item -ItemType Directory -Path $OutputDir -Force | Out-Null
+    }
+    $OutputDir = (Resolve-Path $OutputDir).Path
+}
 
 Write-Step "Preflight checks"
 Require-Command git
@@ -191,6 +209,11 @@ if ($ipaFiles.Count -eq 0) { throw "No .ipa found in downloaded artifacts." }
 
 $dest = Join-Path $Root "Xcode-Output\$($buildCfg.outputIpa)"
 Copy-Item $ipaFiles[0].FullName -Destination $dest -Force
+if ($OutputDir) {
+    $userDest = Join-Path $OutputDir $buildCfg.outputIpa
+    Copy-Item $dest -Destination $userDest -Force
+    $dest = $userDest
+}
 Remove-Item $dlDir -Recurse -Force
 
 Write-Host ""
