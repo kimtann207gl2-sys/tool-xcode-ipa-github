@@ -1,13 +1,13 @@
 {
-    "xcodeZip":  "Xcode-Input/ios.zip",
-    "xcodeSrc":  "Xcode-Input/extracted/ios",
+    "xcodeZip":  "Xcode-Input/xcode-nrolegend-291026.zip",
+    "xcodeSrc":  "Xcode-Input/extracted/xcode-nrolegend-291026",
     "xcodeProject":  "Unity-iPhone.xcodeproj",
     "scheme":  "Unity-iPhone",
-    "appName":  "NroGreen.app",
-    "outputIpa":  "NroGreen.ipa",
-    "artifactName":  "NroGreen-ipa",
-    "bundleId":  "com.MrDUY.NroGreen",
-    "detectedAt":  "2026-10-26T15:28:12.6898908+07:00",
-    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-ios-20261026-152815/ios.zip",
-    "xcodeZipRelease":  "build-ios-20261026-152815"
+    "appName":  "NroLegendS.app",
+    "outputIpa":  "NroLegendS.ipa",
+    "artifactName":  "NroLegendS-ipa",
+    "bundleId":  "com.ngocrong.legend",
+    "detectedAt":  "2026-10-29T09:39:59.9071800+07:00",
+    "xcodeZipUrl":  "https://github.com/kimtann207gl2-sys/tool-xcode-ipa-github/releases/download/build-xcode-nrolegend-291026-20261029-094003/xcode-nrolegend-291026.zip",
+    "xcodeZipRelease":  "build-xcode-nrolegend-291026-20261029-094003"
 }
